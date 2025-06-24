@@ -19,7 +19,7 @@ const Cocktails = () => {
   });
 
   return (
-    <section id="cocktails" className="noisy">
+    <div id="cocktails" className="noisy">
       <img
         src="/images/cocktail-left-leaf.png"
         alt="left-leaf"
@@ -68,7 +68,7 @@ const Cocktails = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
