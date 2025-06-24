@@ -39,8 +39,15 @@ const Hero = () => {
           scrub: true,
         },
       })
-      .to(".right-leaf", { y: 200, x: 75, rotate: "-25deg" }, 0)
-      .to(".left-leaf", { y: -200, x: -75, rotate: "25deg" }, 0);
+      .to(".right-leaf", { y: 100, x: 75, rotate: "-25deg" }, 0)
+      .to(".left-leaf", { y: -100, x: -75, rotate: "25deg" }, 0);
+    // .to(
+    //   ".animatet-font",
+    //   { y: 30, scale: 0.963, filter: "blur(1px) grayscale(30%)" },
+    //   0
+    // );
+    // .to(".animatet-font", { filter: "blur(2px) grayscale(30%)" }, 0);
+    // .to(".animatet-font", { filter: "blur(0px) grayscale(0%)" }, 0.3);
 
     const startValue = isMobile ? "top 50%" : "center 60%";
     const endValue = isMobile ? "120% top" : "bottom top";
@@ -64,8 +71,8 @@ const Hero = () => {
 
   return (
     <>
-      <section id="hero" className="noisy overflow-hidden">
-        <h1 className="title uppercase">Mojito</h1>
+      <section id="hero" className="noisy">
+        <h1 className="title animatet-font uppercase">Mojito</h1>
         <img
           src="images/hero-left-leaf.png"
           alt="left-leaf"
@@ -77,7 +84,7 @@ const Hero = () => {
           className="right-leaf"
         />
         <div className="body">
-          <div className="content">
+          <div className="content animatet-font">
             <div className="space-y-5 hidden md:block">
               <p>Cool. Crisp. Classic.</p>
               <p className="subtitle">
